@@ -9,7 +9,7 @@
 Program Ex2_registro ;
 
 const
-	qtdAlunos  = 10;
+	qtdAlunos  = 3;
 	
 	
 type Alunos = record
@@ -23,10 +23,11 @@ end;
 type Estudante = array[1..qtdAlunos]of Alunos;
 
 var
-	i      : integer;
-	Media  : real;
-	Aluno  : Alunos;
-	aAluno : Estudante;
+	i      		: integer;
+	qtdMedSup : integer;
+	Media  		: real;
+	Aluno  		: Alunos;
+	aAluno 		: Estudante;
 	
 Begin
 		
@@ -51,19 +52,27 @@ Begin
   
   //Estrutura para saber se o aluno tem
 	//media superior que a turma
+	qtdMedSup := 0;
   for i:= 1 to qtdAlunos do
   begin
   	if aAluno[i].rMedia > Media then
-  		aAluno[i].bMediaSup:=	True;
+  	begin	
+			aAluno[i].bMediaSup:=	True;
+  		qtdMedSup := qtdMedSup + 1;
+  	end;
   end;
   
   //Saida de Dados
-  writeln('------------------');
+  textcolor(red);
+  writeln('==================');
 	writeln('MÉDIA GERAL: ',Media:6:2);
-  writeln('------------------'); 
+  writeln('Qtd de Médias Superiores: ',qtdMedSup);
+  writeln('=================='); 
   
+  textcolor(blue);
 	for i:= 1 to qtdAlunos do
   begin
+  	writeln('==================');
     writeln('Nome: ',aAluno[i].sNome);
     writeln('CPF: ',aAluno[i].sCPF);
     writeln('Curso: ',aAluno[i].sCurso);
@@ -72,7 +81,7 @@ Begin
     	writeln('Média Superior: Sim')
     else
     	writeln('Média Superior: Não');
-    writeln('------------------');
+    writeln('==================');
   end;
   
   
