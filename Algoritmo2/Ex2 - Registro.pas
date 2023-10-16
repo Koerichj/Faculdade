@@ -1,3 +1,11 @@
+
+	//Faça um algoritmo que preencha o cadastro
+	//de 10 alunos contendo: nome, CPF,  curso e 
+	//média do aluno. O algoritmo deve calcular a
+	//média da turma e informar quantos e quem são
+	//os alunos que possuem média superior a média turma.
+
+
 Program Ex2_registro ;
 
 const
