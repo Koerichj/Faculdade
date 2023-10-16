@@ -1,3 +1,13 @@
+
+	//Faça um algoritmo para ler o cadastro de
+	//um funcionário contendo seu nome, sua função
+	//e seu salário. Após, mostre a folha de pagamento
+	//do funcionário contendo os seus dados e o
+	//resultado do aumento de 10% sobre seu salário,
+	//sendo que esta informação também deve ser armazenada
+	//no registro. Considere 5 funcionários
+
+
 Program Ex1Registro;
 
 const
