@@ -17,10 +17,10 @@ Begin
 	Fatorial := 1;
 	iFatorial := 1;
 	for i:= 1 to nA do
-	begin
+	//begin
 		iFatorial := iFatorial * i;
-		writeln(i,' - ',iFatorial);
-	end;
+		//writeln(i,' - ',iFatorial);
+	//end;
 	
 	Fatorial := iFatorial;
 end;
