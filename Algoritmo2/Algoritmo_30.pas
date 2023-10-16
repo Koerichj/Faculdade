@@ -1,3 +1,8 @@
+
+	//Faça um procedimento que receba, por parâmetro,
+	//um valor inteiro e positivo, e escreva no
+	//programa principal quantos divisores ele possui.
+
 Program Algoritmo_30;
 	Var
 		iNum 			:integer;
